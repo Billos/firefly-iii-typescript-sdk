@@ -15,10 +15,8 @@ import { createClient } from "firefly-iii-sdk/client";
 import { AboutService } from "firefly-iii-sdk";
 
 const client = createClient({
-  baseUrl: "https://your-firefly-instance/api/v1",
-  headers: {
-    Authorization: "Bearer YOUR_ACCESS_TOKEN",
-  },
+  auth: "your-api-token",
+  baseUrl: "https://your-firefly-instance/api",
 });
 
 const { data } = await AboutService.getAbout({ client });
