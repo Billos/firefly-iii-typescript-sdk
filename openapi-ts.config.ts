@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [
     { enums: true, name: "@hey-api/typescript" },
     {
-      client: "@hey-api/client-axios",
+      client: "@hey-api/client-fetch",
       name: "@hey-api/sdk",
       operations: {
         containerName: "{{name}}Service",
